@@ -31,10 +31,10 @@ br.clear { clear:both; display:block; height:1px; margin:-1px 0 0 0 } /* Use thi
 
 body
 {
-background: #eff0de;
+background: #fffff;
 color: #545454;
 font-size: 100%;
-font-family: Arial, Helvetica, Sans-serif;
+font-family: 'PT Sans', Arial, Helvetica, Sans-serif;
 }
 
 .offscreen {
@@ -46,11 +46,11 @@ position:absolute;
 
 h1, h2, h3, h4
 {
-font-family: Arial;
-text-transform: uppercase;
+font-weight: bold;
 margin: 0 0 10px 0;
-color: #fff;
+color: #545454;
 line-height: 1;
+text-shadow: 1px 1px 0 rgba(230, 230, 230, 0.95);
 }
 
 h1
@@ -68,14 +68,225 @@ h3, h4
 font-size: 1em; /* 16px / 16px */
 }
 
+p
+{
+margin-bottom: 10px;
+}
+
+a:link, a:visited
+{
+color: #68a911;
+text-decoration:none;
+}
+
+a:hover
+{
+color: #2d6fa3;
+text-decoration:underline;
+}
+
 /* 2. header styles */
 
 #header
 {
 background: #1c1c3e;
-height: 200px;
+height: 160px;
+border-top: solid 3px #333;
+
+}
+
+#header .container_12
+{
+}
+
+#logo
+{
+padding: 10px 0;
 }
 
 /* 3. Navigation */
 
+#mainnavigation ul
+{
+margin-top: 15px;
+}
 
+#mainnavigation ul li
+{
+list-style-type: none;
+float: left;
+margin-right: 5px;
+position: relative;
+}
+
+#mainnavigation ul li a, #mainnavigation ul li a:visited
+{
+display: block;
+color: #fff;
+text-decoration: none;
+padding: 9px 15px 8px 15px;
+-webkit-border-radius: 5px 5px 0 0;
+-moz-border-radius: 5px 5px 0 0;
+border-radius: 5px 5px 0 0;
+font-weight: bold;
+background: #1c1c3e;
+-webkit-transition: background 0.3s ease;
+}
+
+#mainnavigation li ul li a, #mainnavigation li ul li a:visited
+{
+font-weight: normal;
+-webkit-transition: none;
+}
+
+
+#mainnavigation ul li.current a, #mainnavigation ul li.current a:visited, #mainnavigation ul li a:hover
+{
+background: #fff;
+color: #1c1c3e;
+}
+
+#mainnavigation li ul
+{
+background: #fff;
+margin:0;
+padding:0;
+position: absolute;
+left: -999em;
+width: 180px;
+border: 1px solid #e3e3e3;
+z-index:9999;
+}
+
+#mainnavigation li:hover ul 
+{
+left: auto;
+display: block;
+}
+
+#mainnavigation li ul li
+{
+margin:0;
+border-bottom: 1px solid #C0C0C0;
+}
+
+
+#mainnavigation li ul li a
+{
+padding:8px 14px;
+width:150px;
+color:#1c1c3e !important;
+background: none;
+text-transform:none;
+}
+
+#mainnavigation li ul li a:hover
+{
+font-weight: bold;
+}
+
+/* home page styles */
+
+#splash
+{
+margin: 20px 0;
+padding: 20px 0;
+}
+
+#splash #introduction
+{
+float: left;
+width: 575px;
+padding-right: 20px;
+}
+
+#splash #introduction h1
+{
+margin-top: 30px;
+font-size: 1.875em; /* 30 / 16 */
+}
+
+#splash #introduction p
+{
+font-weight: bold;
+}
+
+#splash #globe
+{
+float: left;
+height: 300px;
+width: 300px;
+background: url('../images/globe-small.jpg') no-repeat center center;
+margin-bottom: 0px;
+}
+
+.feature
+{
+margin-bottom: 20px;
+padding-bottom: 20px;
+border-bottom: solid 1px #ccc;
+}
+
+.feature h3
+{
+font-size: 1.125em; /* 18px / 16px */
+padding: 50px 0 15px 70px;
+margin-bottom: 10px;
+}
+
+.feature.company-info h3
+{
+background: url('../images/64-Info-About.png') no-repeat 0px 23px;
+}
+
+.feature.services h3
+{
+background: url('../images/64-Globe.png') no-repeat 0px 23px;
+}
+
+.feature.contact h3
+{
+background: url('../images/64-Speech-Bubbles-2.png') no-repeat 0px 23px;
+}
+
+
+/* Footer */
+
+#footer
+{
+border-top: solid 3px #333;
+height: 200px;
+padding: 30px 0 20px 0;
+margin-top: 20px;
+background: #1c1c3e;
+color: #fafafa;
+font-size: 90%;
+}
+
+#footer h3
+{
+color: #fff;
+text-shadow: none;
+}
+
+#footer ul li a, #footer ul li a:visited
+{
+color: #fff;
+text-decoration: none;
+}
+
+#footer ul li a:hover
+{
+color: #fff;
+text-decoration: underline;
+}
+
+#footer ul li
+{
+padding: 2px 0 2px 20px;
+}
+
+#footer ul li 
+{
+background: url("../images/ico-bullet-fff.png") no-repeat scroll 10px center transparent;
+}

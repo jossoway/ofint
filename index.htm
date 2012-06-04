@@ -14,10 +14,14 @@
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	
+	
+	
+	
 	<!-- CSS
   ================================================== -->
   
   	<!--[if ! lte IE 6]><!-->
+  		<link href='http://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Narrow|PT+Sans+Caption' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/reset.css"/>
 		<link rel="stylesheet" href="css/960.css"/>
 		<link rel="stylesheet" href="css/oilfield.css"/>
@@ -46,12 +50,17 @@
 
 <div id="wrapper">
 
+<div id="header">
+
 	<div class="container_12">
 	
 		<div class="grid_12">
-				<div id="header">
-					<a href="#" title="Oilfield International home page"><img src="logo.png" alt="Oilfield International logo"/></a>
-				</div><!--/ end #header -->
+		
+			<div id="logo">
+
+					<a href="#" title="Oilfield International home page"><img src="images/oilfield-international-logo.png" alt="Oilfield International logo" width="300" height="83"/></a>
+			</div>
+
 		</div><!--/ end .grid_12 -->
 		
 		<div class="clear">&nbsp;</div>
@@ -61,8 +70,17 @@
 			<div id="mainnavigation">
 			
 			<ul>
-				<li><a href="">Home</a></li>
-				<li><a href="">Our team</a></li>
+				<li class="current"><a href="">Home</a></li>
+				<li><a href="">Our team</a>
+					<ul>
+						<li><a href="">Item 1</a></li>
+						<li><a href="">Item 2 with a longer title</a></li>
+						<li><a href="">Item 3</a></li>
+						<li><a href="">Item 4</a></li>
+						<li><a href="">Item 5</a></li>
+					</ul>
+				
+				</li>
 				<li><a href="">Clients</a></li>
 				<li><a href="">Services</a></li>
 				<li><a href="">Case Studies</a></li>
@@ -79,6 +97,7 @@
 
 	</div><!--/ end .container_12 -->
 	
+</div><!--/ end #header -->
 	
 	<div class="container_12" id="content">
 	
@@ -95,7 +114,7 @@
 					
 				</div><!--/ end #introduction -->
 				
-				<div id="globe">Globe image goes here</div><!--/ end #globe -->
+				<div id="globe">&nbsp;</div><!--/ end #globe -->
 				
 				
 			</div><!--/ end #splash -->
@@ -106,26 +125,38 @@
 		<div class="clear">&nbsp;</div>
 		
 		<div class="grid_4">
+		
+			<div class="feature company-info">
 			
-			<h3>Featured area</h3>
+			<h3>Company information</h3>
 			<p>Established in 1990, Oilfield International offers technical, valuation, acquisition and contracts services to oil companies, and to companies entering the oil industry by acquisition or startup.</p>
-			<p class="readmore">Find out more &rarr;</p>
+			<p class="readmore"><a href="">Find out more &rarr;</a></p>
+			
+			</div><!--/ end .feature -->
 			
 		</div><!--/ end .grid_4 -->
 		
 		<div class="grid_4">
+		
+			<div class="feature services">
 			
-			<h3>Featured area</h3>
+			<h3>Our services</h3>
 			<p>Established in 1990, Oilfield International offers technical, valuation, acquisition and contracts services to oil companies, and to companies entering the oil industry by acquisition or startup.</p>
-			<p class="readmore">Find out more &rarr;</p>
+			<p class="readmore"><a href="">Find out more &rarr;</a></p>
+			
+			</div><!--/ end .feature -->
 			
 		</div><!--/ end .grid_4 -->
 		
 		<div class="grid_4">
+		
+			<div class="feature contact">
 			
-			<h3>Featured area</h3>
+			<h3>Contact information</h3>
 			<p>Established in 1990, Oilfield International offers technical, valuation, acquisition and contracts services to oil companies, and to companies entering the oil industry by acquisition or startup.</p>
-			<p class="readmore">Find out more &rarr;</p>
+			<p class="readmore"><a href="">Find out more &rarr;</a></p>
+			
+			</div><!--/ end .feature -->
 			
 		</div><!--/ end .grid_4 -->
 		
@@ -134,17 +165,50 @@
 		
 	</div><!--/ end .container_12 #content -->
 	
-	<div class="container_12" id="footer">	
+<div id="footer">
 	
-		<div class="grid_12">
-			
-			Footer content goes here.
-			
-			
-		</div>
+	<div class="container_12">	
 	
+		<div class="grid_4">
+			
+			<h3>About Oilfield International</h3>
+			<ul>
+				<li><a href="">Company overview</a></li>
+				<li><a href="">Clients</a></li>
+				<li><a href="">Services</a></li>
+				<li><a href="">Team</a></li>
+			</ul>
+
+			
+		</div><!--/ end .grid_4 -->
+		
+		<div class="grid_4">
+			
+			<h3>Site information</h3>
+			<ul>
+				<li><a href="">Accessibility</a></li>
+				<li><a href="">Privacy Policy</a></li>
+				<li><a href="">Site map</a></li>
+			</ul>
+
+			
+		</div><!--/ end .grid_4 -->
+		
+		<div class="grid_4">
+			
+			<h3>Registered address</h3>
+			<p>Oilfield International<br/>A street name<br/>A town name<br/>A city name</p>
+			<p>Company number: 1234567890</p>
+
+			
+		</div><!--/ end .grid_4 -->
+		
+		<div class="clear">&nbsp;</div>
+
 	
-	</div><!--/ end .container_12 #footer -->
+	</div><!--/ end .container_12 -->
+
+</div><!--/ end #footer -->
 
 </div><!--/ end #wrapper -->
 
