@@ -50,12 +50,14 @@ font-weight: bold;
 margin: 0 0 10px 0;
 color: #545454;
 line-height: 1;
-text-shadow: 1px 1px 0 rgba(230, 230, 230, 0.95);
 }
 
 h1
 {
 font-size: 1.5em; /* 24px / 16px */
+border-bottom: solid 1px #ccc;
+margin-bottom: 20px;
+padding-bottom: 10px;
 }
 
 h2
@@ -136,21 +138,25 @@ margin: 0 0 10px 10px;
 #header
 {
 background: #1c1c3e;
-height: 160px;
+height: 125px;
 border-top: solid 3px #333;
 }
 
-#logo
+#header .container_12
 {
-padding: 10px 0;
+background: url('../images/header-globe.png') no-repeat 850px 12px;
 }
-
 
 /* 3. Navigation */
 
 #mainnavigation ul
 {
-margin: 16px 0 0 0 !important;
+margin: 0 !important;
+}
+
+.ie #mainnavigation ul
+{
+margin-top: 1px !important;
 }
 
 #mainnavigation ul li ul
@@ -284,7 +290,10 @@ padding-right: 20px;
 #splash #introduction h1
 {
 margin-top: 30px;
+margin-bottom: 10px;
 font-size: 1.875em; /* 30 / 16 */
+border-bottom: none;
+padding: 0;
 }
 
 #splash #introduction p
