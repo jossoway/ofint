@@ -106,6 +106,11 @@ a:link, a:visited
 {
 color: #68a911;
 text-decoration:none;
+-moz-transition: all 0.3s ease;
+-webkit-transition: all 0.3s ease;
+transition: all 0.3s ease;
+-webkit-tap-highlight-color: #2d6fa3;
+-moz-tap-highlight-color: #2d6fa3;
 }
 
 a:hover
@@ -196,13 +201,17 @@ padding: 9px 15px 8px 15px;
 -moz-border-radius: 5px 5px 0 0;
 border-radius: 5px 5px 0 0;
 font-weight: bold;
--webkit-transition: background 0.3s ease;
+-moz-transition: all 0.3s ease;
+-webkit-transition: all 0.3s ease;
+transition: all 0.3s ease;
 }
 
 #mainnavigation ul li ul li a, #mainnavigation li ul li a:visited
 {
 font-weight: normal;
+-moz-transition: none;
 -webkit-transition: none;
+transition: none;
 }
 
 
@@ -264,13 +273,62 @@ font-weight: bold;
 {
 margin: 40px 0;
 padding: 0 0 20px 0;
-border-bottom: solid 1px #ccc;
+/* border-bottom: solid 1px #ccc; */
 }
 
 #secondarycontent
 {
 padding-left: 20px;
 }
+
+#maincontent .section
+{
+padding-bottom: 20px;
+margin-bottom: 20px;
+border-bottom: solid 1px #ccc;
+float: left;
+display: inline-block;
+}
+
+#maincontent .section img
+{
+margin: 0 0 10px 10px;
+float: right;
+}
+
+#maincontent .section a img
+{
+-moz-transition: all 0.3s ease;
+-webkit-transition: all 0.3s ease;
+transition: all 0.3s ease;
+}
+
+#maincontent .section a:hover img
+{
+opacity: 0.75;
+}
+
+#maincontent .section h2 a:link, #maincontent .section h2 a:visited 
+{
+color: #545454;
+-moz-transition: all 0.3s ease;
+-webkit-transition: all 0.3s ease;
+transition: all 0.3s ease;
+-webkit-tap-highlight-color: #2d6fa3;
+-moz-tap-highlight-color: #2d6fa3;
+}
+
+#maincontent .section h2 a:hover
+{
+color: #2d6fa3;
+text-decoration:underline;
+}
+
+#maincontent .section .subtitle
+{
+font-weight: bold;
+}
+
 
 /* home page styles */
 
@@ -340,6 +398,27 @@ background: url('../images/64-Globe.png') no-repeat 0px 23px;
 .widget.contact h3
 {
 background: url('../images/64-Speech-Bubbles-2.png') no-repeat 0px 23px;
+}
+
+.widget.associates h3
+{
+background: url('../images/64-Group-2.png') no-repeat 0px 23px;
+}
+
+.widget h3 a:link, .widget h3 a:visited 
+{
+color: #545454;
+-moz-transition: all 0.3s ease;
+-webkit-transition: all 0.3s ease;
+transition: all 0.3s ease;
+-webkit-tap-highlight-color: #2d6fa3;
+-moz-tap-highlight-color: #2d6fa3;
+}
+
+.widget h3 a:hover
+{
+color: #2d6fa3;
+text-decoration:underline;
 }
 
 
