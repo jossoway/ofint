@@ -24,6 +24,8 @@ regions[sidebar_first]  = Left sidebar
 regions[sidebar_second] = Right sidebar
 regions[lower_content]  = Lower content
 regions[footer]         = Footer
+regions[page_top]    = Page top
+regions[page_bottom]    = Page bottom
 
 
 ;----------// Site Features
