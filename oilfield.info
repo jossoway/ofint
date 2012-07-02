@@ -11,22 +11,19 @@
 
 ;----------// Modular stylesheets
 
+  stylesheets[all][] = css/reset.css
   stylesheets[all][] = css/oilfield.css
   stylesheets[all][] = css/ie.css
   stylesheets[all][] = css/debug.css
 
 ;----------// Regions
 
-regions[page_top]       = Page top
-regions[header]         = Header
-regions[search_box]     = Search Box
-regions[highlighted]    = Highlight
 regions[help]           = Help
 regions[content]        = Content
 regions[sidebar_first]  = Left sidebar
 regions[sidebar_second] = Right sidebar
+regions[lower_content]  = Lower content
 regions[footer]         = Footer
-regions[page_bottom]    = Page bottom
 
 
 ;----------// Site Features

@@ -40,22 +40,43 @@
  * @see template_preprocess_html()
  * @see template_process()
  */
-?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
-  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language; ?>" version="XHTML+RDFa 1.0" dir="<?php print $language->dir; ?>"<?php print $rdf_namespaces; ?>>
+?>
+<!doctype html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="<?php print $language->language; ?>"> <!--<![endif]-->
 
 <head profile="<?php print $grddl_profile; ?>">
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
-  <?php print $styles; ?>
+  
+  	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!--[if ! lte IE 6]><!-->
+  		<link href='http://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Narrow|PT+Sans+Caption' rel='stylesheet' type='text/css'>
+  		<?php print $styles; ?>
+  	<!--<![endif]-->
+
+	<!--[if lte IE 6]>
+		<link rel="stylesheet" href="http://universal-ie6-css.googlecode.com/files/ie6.1.1.css" media="screen, projection">
+		<link rel="stylesheet" href="css/ie6.css"/>	
+	<![endif]-->
+  		
   <?php print $scripts; ?>
+  
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
-  <div id="skip-link">
-    <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
-  </div>
-  <?php print $page_top; ?>
+  <div id="access" class="offscreen">
+  
+  		
+  	<ul>
+		<li><a href="#mainnavigation" title="Skip to main navigation">Skip to main navigation</a></li>
+		<li><a href="#content" title="Skip to content">Skip to content</a></li>
+	</ul>
+  
+   </div>
   <?php print $page; ?>
-  <?php print $page_bottom; ?>
 </body>
 </html>
