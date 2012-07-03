@@ -363,6 +363,11 @@ background: url('../images/globe-small.jpg') no-repeat center center;
 margin-bottom: 0px;
 }
 
+#block-views-front-page-widgets-block-1
+{
+margin-bottom: 0;
+}
+
 /* widgets */
 
 .widget
@@ -453,3 +458,69 @@ padding: 2px 0 2px 20px;
 {
 background: url("../images/ico-bullet-fff.png") no-repeat scroll 10px center transparent;
 }
+
+/* forms */
+
+#maincontent form input[type="text"], #maincontent form textarea
+{
+border: solid 1px #ccc;
+padding: 5px;
+}
+
+
+	a.button, 
+	button,
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"], #mc_embed_signup input[type="submit"] {
+		background: #eee; 
+	  border: 1px solid #aaa;
+	  border-top: 1px solid #ccc;
+	  border-left: 1px solid #ccc;
+	  padding: 4px 12px;
+	  -moz-border-radius: 3px;
+	  -webkit-border-radius: 3px;
+	  border-radius: 3px;
+	  color: #444;
+	  display: inline-block;
+	  font-size: 11px;
+	  font-weight: bold;
+	  text-decoration: none;
+	  text-shadow: 0 1px rgba(255, 255, 255, .75);
+	  cursor: pointer;
+	  line-height: 16px;
+	  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+	  
+	a.button:hover, 
+	button:hover,
+	input[type="submit"]:hover,
+	input[type="reset"]:hover,
+	input[type="button"]:hover, #mc_embed_signup input[type="submit"]:hover {
+		color: #222;
+
+	  border: 1px solid #888;
+	  border-top: 1px solid #aaa;
+	  border-left: 1px solid #aaa; }
+	  
+  a.button:active, 
+  button:active,
+	input[type="submit"]:active,
+	input[type="reset"]:active,
+	input[type="button"]:active, #mc_embed_signup input[type="submit"]:active {
+    background: #eee; /* Old browsers */
+    border: 1px solid #888;
+    border-bottom: 1px solid #aaa;
+    border-right: 1px solid #aaa; }
+	
+	.button.full-width, 
+	button.full-width,
+	input[type="submit"].full-width,
+	input[type="reset"].full-width,
+	input[type="button"].full-width { 
+		width: 100%;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		text-align: center; }
+
+
+
