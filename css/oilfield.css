@@ -375,6 +375,7 @@ margin-bottom: 0;
 margin-bottom: 20px;
 padding-bottom: 10px;
 border-bottom: solid 1px #ccc;
+font-size: 0.9375em; /* 15px / 16px */
 }
 
 .front .widget img, #secondarycontent .widget img
